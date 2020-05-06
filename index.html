@@ -386,11 +386,12 @@ var data = d3.json('graph.json', function(data) {
               .style("z-index", -10)
               .attr("id", "svg");
 
+        // Per-type markers, as they don't inherit styles.
           svg.append('svg:defs').selectAll('marker')
-              .data(['end'])
+              .data([...Array(5).keys()])
               .enter()
             .append('svg:marker')
-              .attr({'id': "arrowhead",
+              .attr({'id': d => `arrow-${d}`,
                      'viewBox':'0 -5 10 10',
                      'refX': 20,
                      'refY': 0,
@@ -401,7 +402,7 @@ var data = d3.json('graph.json', function(data) {
                      'xoverflow':'visible'})
             .append('svg:path')
               .attr('d', 'M0,-5L10,0L0,5')
-              .attr('fill', '#ccc');
+              .attr("fill", d => colors(d));
 
         var force = d3.layout.force();
 
@@ -419,7 +420,7 @@ var data = d3.json('graph.json', function(data) {
                     })
                     .attr("class", "link")
                     .style("stroke-width", function (d) { return d.months; })
-                    .attr('marker-end','url(#arrowhead)')
+                    .attr('marker-end', d => `url(${new URL(`#arrow-${d.WP}`, location)})`)
                     .style("stroke", function(d){
                         return colors(d.WP)
                     });
