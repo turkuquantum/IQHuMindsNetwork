@@ -392,12 +392,12 @@ var data = d3.json('graph.json', function(data) {
             .append('svg:marker')
               .attr({'id': "arrowhead",
                      'viewBox':'0 -5 10 10',
-                     'refX': 22,
+                     'refX': 20,
                      'refY': 0,
                      'orient':'auto',
-                     'markerWidth': 20,
-                     'markerHeight': 20,
-                     'markerUnits': "strokeWidth",
+                     'markerWidth': 10,
+                     'markerHeight': 10,
+                     'markerUnits': "userSpaceOnUse",
                      'xoverflow':'visible'})
             .append('svg:path')
               .attr('d', 'M0,-5L10,0L0,5')
