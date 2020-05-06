@@ -333,8 +333,8 @@ var data = d3.json('graph.json', function(data) {
           }
       };
 
-      this.addLink = function (source, target, value) {
-          links.push({"source": findNode(source.id), "target": findNode(target.id), "value": value});
+      this.addLink = function (source, target, value, wp, months) {
+          links.push({"source": findNode(source.id), "target": findNode(target.id), "value": value, "WP": wp, "months": months});
           update();
       };
 
@@ -342,7 +342,7 @@ var data = d3.json('graph.json', function(data) {
         data.edges.forEach(function(d) {
             graph.addNode(d.source);
             graph.addNode(d.target);
-            graph.addLink(d.source, d.target, d.value);
+            graph.addLink(d.source, d.target, d.value, d.WP, d.months);
         });
       };
 
@@ -377,7 +377,7 @@ var data = d3.json('graph.json', function(data) {
           middle = w/2;
       var linkDistance = 300;
 
-      var colors = d3.scale.category20();
+      var colors = d3.scale.category10();
 
       var svg = d3.select("body")
             .append("svg:svg")
@@ -418,7 +418,13 @@ var data = d3.json('graph.json', function(data) {
                         return d.source.id + "-" + d.value + "-" + d.target.id;
                     })
                     .attr("class", "link")
-                    .attr('marker-end','url(#arrowhead)');
+                    .style("stroke-width", function (d) { return d.months; })
+                    .attr('marker-end','url(#arrowhead)')
+                    .style("stroke", function(d){
+                        return colors(d.WP)
+                    });
+
+
 
                 path.exit().remove();
 
