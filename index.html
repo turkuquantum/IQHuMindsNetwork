@@ -27,6 +27,26 @@ path.invis {
     fill: none;
     stroke-width: 0;
 }
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
+    font: 12px 'Open Sans';
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+div.tooltip h3 {
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
 </style>
 </head>
 <body>
@@ -44,16 +64,23 @@ var data = d3.json('graph.json', function(data) {
           }
       };
 
-      this.addLink = function (source, target, value, wp, months) {
-          links.push({"source": findNode(source.id), "target": findNode(target.id), "value": value, "WP": wp, "months": months});
+      this.addLink = function (source, target, value, wp, duration, purpose, tasks) {
+          links.push({"source": findNode(source.id),
+                      "target": findNode(target.id),
+                      "value": value,
+                      "WP": wp,
+                      "duration": duration,
+                      "purpose": purpose,
+                      "tasks": tasks});
           update();
       };
 
       this.initialize = function() {
         data.edges.forEach(function(d) {
+            console.log(d)
             graph.addNode(d.source);
             graph.addNode(d.target);
-            graph.addLink(d.source, d.target, d.value, d.WP, d.months);
+            graph.addLink(d.source, d.target, d.value, d.WP, d.duration, d.purpose, d.tasks);
         });
       };
 
@@ -88,7 +115,11 @@ var data = d3.json('graph.json', function(data) {
           middle = w/2;
       var linkDistance = 300;
 
-      var colors = d3.scale.category10();
+      var colors = d3.scale.category20();
+        // Define the div for the tooltip
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
 
       var svg = d3.select("body")
             .append("svg:svg")
@@ -130,7 +161,7 @@ var data = d3.json('graph.json', function(data) {
                         return d.source.id + "-" + d.value + "-" + d.target.id;
                     })
                     .attr("class", "link")
-                    .style("stroke-width", function (d) { return d.months; })
+                    .style("stroke-width", function (d) { return d.duration; })
                     .attr('marker-end', d => `url(${new URL(`#arrow-${d.WP}`, location)})`)
                     .style("stroke", function(d){
                         return colors(d.WP)
@@ -162,7 +193,24 @@ var data = d3.json('graph.json', function(data) {
                       .attr("xlink:href", function(d) { return "#invis_" + d.source.id + "-" + d.value + "-" + d.target.id; })
                       .style("fill", "#cccccc")
                       .style("font-size", 10)
-                      .text(function(d) { return d.value; });
+                      .text(function(d) { return d.value; })
+                      // Tooltip
+                      .on("mouseover", function(d) {
+                            div.transition()
+                                .duration(200)
+                                .style("opacity", .9);
+                            div.html("<h3>" + d.value + "</h3>" +
+                                     "<b>WP(s)</b>: " + d.WP + "<br/>"  +
+                                     "<b>Duration</b>: " + d.duration + " months<br/>" +
+                                     "<b>Purpose</b>: " + d.purpose)
+                                .style("left", (d3.event.pageX) + "px")
+                                .style("top", (d3.event.pageY - 28) + "px");
+                            })
+                      .on("mouseout", function(d) {
+                            div.transition()
+                                .duration(500)
+                                .style("opacity", 0);
+                        });
 
             var node = svg.selectAll("g.node")
                     .data(force.nodes());
@@ -206,12 +254,12 @@ var data = d3.json('graph.json', function(data) {
 
                         if (siblingCount > 1) {
                             var siblings = getSiblingLinks(d.source, d.target);
-                            console.log(siblings);
+                            //console.log(siblings);
                             var arcScale = d3.scale.ordinal()
                                                     .domain(siblings)
                                                     .rangePoints([1, siblingCount]);
-                            drx = drx/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
-                            dry = dry/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
+                            drx = drx/(1 + (1.1/siblingCount) * (arcScale(d.value) - 1));
+                            dry = dry/(1 + (1.1/siblingCount) * (arcScale(d.value) - 1));
                         }
 
                     return "M" + x1 + "," + y1 + "A" + drx + ", " + dry + " " + xRotation + ", " + largeArc + ", " + sweep + " " + x2 + "," + y2;

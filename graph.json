@@ -1,1 +1,1347 @@
-{"edges": [{"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ESR-CS", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-CS", "WP": 2, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ESR-CS", "WP": 1, "months": 2}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ESR-CS", "WP": 3, "months": 2}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 8, "label": "JILA"}, "value": "ESR-CS", "WP": 3, "months": 2}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Chiofalo", "WP": 2, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Chiofalo", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Chiofalo", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ER-Chiofalo", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 8, "label": "JILA"}, "value": "ER-Chiofalo", "WP": 2, "months": 2}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Chiofalo", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Chiofalo", "WP": 2, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ER-Chiofalo", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Chiofalo", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 8, "label": "JILA"}, "value": "ER-Chiofalo", "WP": 3, "months": 3}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Barsanti", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Barsanti", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Barsanti", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Barsanti", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Barsanti", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ER-Barsanti", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 8, "label": "JILA"}, "value": "ER-Barsanti", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ESR-QP", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-QP", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-QP", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-QP", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-QP", "WP": 2, "months": 2}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ESR-QP", "WP": 2, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ESR-QP", "WP": 3, "months": 3}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 8, "label": "JILA"}, "value": "ESR-QP", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 8, "label": "JILA"}, "value": "ESR-QP", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Conte", "WP": 1, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ER-Conte", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Pelagatti", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Pelagatti", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Pelagatti", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Pelagatti", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Cisternino", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Cisternino", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Cisternino", "WP": 2, "months": 0.5}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Cicchini", "WP": 3, "months": 2}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ER-Cicchini", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ER-Cicchini", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Morrone", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ER-Morrone", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ESR-NS", "WP": 3, "months": 4}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-NS", "WP": 3, "months": 3}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 7, "label": "QuSide"}, "value": "ESR-NS", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Grossi", "WP": 3, "months": 1}, {"source": {"id": 1, "label": "UNIPI"}, "target": {"id": 8, "label": "JILA"}, "value": "ER-Grossi", "WP": 3, "months": 1}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Rossi", "WP": 3, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Rossi", "WP": 1, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 4, "label": "VIS"}, "value": "ER-Rossi", "WP": 2, "months": 2}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Foti", "WP": 1, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 4, "label": "VIS"}, "value": "ER-Foti", "WP": 1, "months": 1.5}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 4, "label": "VIS"}, "value": "ER-Foti", "WP": 2, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 4, "label": "VIS"}, "value": "ER-Foti", "WP": 1, "months": 4}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Garcia Perez", "WP": 1, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 4, "label": "VIS"}, "value": "ESR-Anttila", "WP": 2, "months": 2}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 8, "label": "JILA"}, "value": "ESR-Anttila", "WP": 2, "months": 4}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 8, "label": "JILA"}, "value": "ESR-Anttila", "WP": 3, "months": 4}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 9, "label": "Unity"}, "value": "ESR-Piispanen", "WP": 2, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 7, "label": "QuSide"}, "value": "ESR-Piispanen", "WP": 3, "months": 2}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 4, "label": "VIS"}, "value": "ESR-Piispanen", "WP": 2, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Sokolov", "WP": 3, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 9, "label": "Unity"}, "value": "ER-Sokolov", "WP": 3, "months": 3}, {"source": {"id": 2, "label": "UTU"}, "target": {"id": 6, "label": "IBM"}, "value": "ER-Sokolov", "WP": 2, "months": 3}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 6, "label": "IBM"}, "value": "ESR- Requena", "WP": 1, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 6, "label": "IBM"}, "value": "ESR-Huber", "WP": 1, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR- Fraxanet", "WP": 1, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 4, "label": "VIS"}, "value": "ESR-Abiuso", "WP": 1, "months": 1}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 4, "label": "VIS"}, "value": "ESR-Abiuso", "WP": 1, "months": 1}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-Boghiu", "WP": 3, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 4, "label": "VIS"}, "value": "ESR-Dawid", "WP": 1, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 5, "label": "MiTale"}, "value": "ESR-Chung-Yun Hsieh", "WP": 2, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 6, "label": "IBM"}, "value": "ESR-Senno", "WP": 2, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 6, "label": "IBM"}, "value": "ESR-Gratsea", "WP": 2, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 8, "label": "JILA"}, "value": "ESR-Rivera", "WP": 3, "months": 2}, {"source": {"id": 3, "label": "ICFO"}, "target": {"id": 8, "label": "JILA"}, "value": "ESR-Salamon", "WP": 3, "months": 2}, {"source": {"id": 4, "label": "VIS"}, "target": {"id": 2, "label": "UTU"}, "value": "MNG", "WP": 2, "months": 1}, {"source": {"id": 4, "label": "VIS"}, "target": {"id": 3, "label": "ICFO"}, "value": "MNG", "WP": 2, "months": 3}, {"source": {"id": 4, "label": "VIS"}, "target": {"id": 8, "label": "JILA"}, "value": "MNG", "WP": 2, "months": 1}, {"source": {"id": 4, "label": "VIS"}, "target": {"id": 2, "label": "UTU"}, "value": "TECH", "WP": 2, "months": 5}, {"source": {"id": 4, "label": "VIS"}, "target": {"id": 2, "label": "UTU"}, "value": "TECH", "WP": 2, "months": 2}, {"source": {"id": 5, "label": "MiTale"}, "target": {"id": 1, "label": "UNIPI"}, "value": "MNG - Skult", "WP": 1, "months": 1}, {"source": {"id": 5, "label": "MiTale"}, "target": {"id": 1, "label": "UNIPI"}, "value": "MNG - Skult", "WP": 1, "months": 1}, {"source": {"id": 5, "label": "MiTale"}, "target": {"id": 3, "label": "ICFO"}, "value": "MNG - Skult", "WP": 2, "months": 2}, {"source": {"id": 5, "label": "MiTale"}, "target": {"id": 1, "label": "UNIPI"}, "value": "TECH - Peltola", "WP": 3, "months": 1}, {"source": {"id": 5, "label": "MiTale"}, "target": {"id": 1, "label": "UNIPI"}, "value": "TECH - Peltola", "WP": 2, "months": 2}, {"source": {"id": 5, "label": "MiTale"}, "target": {"id": 1, "label": "UNIPI"}, "value": "TECH - Tamminen", "WP": 1, "months": 1}, {"source": {"id": 5, "label": "MiTale"}, "target": {"id": 1, "label": "UNIPI"}, "value": "TECH - Tamminen", "WP": 1, "months": 1}, {"source": {"id": 6, "label": "IBM"}, "target": {"id": 2, "label": "UTU"}, "value": "ER", "WP": 1, "months": 2}, {"source": {"id": 6, "label": "IBM"}, "target": {"id": 1, "label": "UNIPI"}, "value": "ESR", "WP": 3, "months": 2}, {"source": {"id": 6, "label": "IBM"}, "target": {"id": 9, "label": "Unity"}, "value": "ESR", "WP": 2, "months": 6}, {"source": {"id": 7, "label": "QuSide"}, "target": {"id": 2, "label": "UTU"}, "value": "ESR", "WP": 1, "months": 1}, {"source": {"id": 7, "label": "QuSide"}, "target": {"id": 1, "label": "UNIPI"}, "value": "ESR", "WP": 3, "months": 2}]}
+{
+    "edges": [{
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ESR-CS",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Analysis gameplay data WP3 task 3.1, SO3a,R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-CS",
+        "WP": 2,
+        "duration": 1,
+        "purpose": "Game development R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ESR-CS",
+        "WP": 1,
+        "duration": 2,
+        "purpose": "Identification game criteria R.M. Seminar",
+        "tasks": 1.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ESR-CS",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Hybrid machine/human strategies and benchmarking, R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ESR-CS",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Gameplay data analysis, R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 2,
+        "duration": 1,
+        "purpose": "Game pre-production, R.M. Workshop",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Identification of gameplay criteria  R. M. Seminar",
+        "tasks": 1.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Conceptualize problem R.M. Seminar",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Hybrid machine/human strategies and benchmarking R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Videogame production, pub and distribution (quantum pills) R.M. Seminar",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Videogame dev and test, R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 2,
+        "duration": 1,
+        "purpose": "Game testing, WP2 task 2.2, SO2, R.M. Workshop",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Gameplay analysis R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ER-Chiofalo",
+        "WP": 3,
+        "duration": 3,
+        "purpose": "Evaluation effectiveness and efficiency R.M. Seminar",
+        "tasks": 3.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Barsanti",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Success indicators R. M. Seminar",
+        "tasks": 1.4
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Barsanti",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Identification criteria R.M. Workshop",
+        "tasks": 1.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Barsanti",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Conceptualize problem R.M. Seminar",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Barsanti",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Videogame dev and test, R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Barsanti",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ER-Barsanti",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Hybrid machine/human strategies and benchmarking, R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ER-Barsanti",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Meas. Impact on playing game strategies R.M. Seminar",
+        "tasks": 3.4
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ESR-QP",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Hybrid machine/human solution and benchmarking R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-QP",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Identification problem R.M. Seminar",
+        "tasks": 1.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-QP",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Conceptualize problem R.M. Seminar",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-QP",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Identify success indicators R.M. Seminar",
+        "tasks": 1.4
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-QP",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Game pre-production, R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ESR-QP",
+        "WP": 2,
+        "duration": 1,
+        "purpose": "Videogame dev and test R.M. Seminar",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ESR-QP",
+        "WP": 3,
+        "duration": 3,
+        "purpose": "Hybrid machine/human strategies and benchmarking, videotale R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ESR-QP",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Evaluation effectiveness and efficiency and Meas. Impact on playing game strategies R.M. Seminar",
+        "tasks": 3.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ESR-QP",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "",
+        "tasks": 3.4
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Conte",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Identification problem R.M. Seminar",
+        "tasks": 1.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ER-Conte",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Hybrid machine/human strategies and benchmarking, R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Pelagatti",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Game testing  R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Pelagatti",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Tutorials for ASD people, R.M. Seminar",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Pelagatti",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Analyzing ASD people feedbacks R.M. Seminar",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Pelagatti",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Storytelling for ASD people R.M. Seminar",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Cisternino",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Analysis gameplay data WP3 task 3.1, SO3a,R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Cisternino",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Videogame dev and test, R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Cisternino",
+        "WP": 2,
+        "duration": 0.5,
+        "purpose": "Videogame dev and test, R.M. Seminar",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Cicchini",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Analysis gameplay data WP3 task 3.1, SO3a,R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ER-Cicchini",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Analysis gameplay data R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ER-Cicchini",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Gameplay data analysis R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Morrone",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Analysis gameplay data WP3 task 3.1, SO3a,R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ER-Morrone",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Hybrid machine/human strategies and benchmarking, R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ESR-NS",
+        "WP": 3,
+        "duration": 4,
+        "purpose": "Analysis gameplay data WP3 task 3.1, SO3a,R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-NS",
+        "WP": 3,
+        "duration": 3,
+        "purpose": "Analysis gameplay data R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ESR-NS",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Gameplay data analysis R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Grossi",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Analysis gameplay data WP3 task 3.1, SO3a,R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ER-Grossi",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "Gameplay data analysis, R.M. Seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Rossi",
+        "WP": 3,
+        "duration": 3,
+        "purpose": "BlackboxR.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Rossi",
+        "WP": 1,
+        "duration": 3,
+        "purpose": "Identification of research problem R.M. Seminar/Workshop",
+        "tasks": 1.2
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ER-Rossi",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Game development, R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Foti",
+        "WP": 1,
+        "duration": 3,
+        "purpose": "Identification of research problem; R.M. Seminar/Workshop",
+        "tasks": 1.1
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ER-Foti",
+        "WP": 1,
+        "duration": 1.5,
+        "purpose": "",
+        "tasks": 1.1
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ER-Foti",
+        "WP": 2,
+        "duration": 3,
+        "purpose": "Identification of games criteria  and Game production, R.M. Workshop",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ER-Foti",
+        "WP": 1,
+        "duration": 4,
+        "purpose": "Quantum Physics education, R.M. Seminar",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Garcia Perez",
+        "WP": 1,
+        "duration": 3,
+        "purpose": "Game criteria and conceptualization, R.M. Seminar/Workshop",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ESR-Anttila",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Game production, R.M. Workshop",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ESR-Anttila",
+        "WP": 2,
+        "duration": 4,
+        "purpose": "",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ESR-Anttila",
+        "WP": 3,
+        "duration": 4,
+        "purpose": "Quantum Physics education, R.M. Seminar",
+        "tasks": 3.3
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ESR-Piispanen",
+        "WP": 2,
+        "duration": 3,
+        "purpose": "Success indicators\u00a0\u00a0R.M. Seminar",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "value": "ESR-Piispanen",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Machine learning, R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ESR-Piispanen",
+        "WP": 2,
+        "duration": 3,
+        "purpose": "Game production, R.M. Workshop",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Sokolov",
+        "WP": 3,
+        "duration": 3,
+        "purpose": "Blackbox and success indicators, R.M. Seminar",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ER-Sokolov",
+        "WP": 3,
+        "duration": 3,
+        "purpose": "Hybrid benchmarking, R.M. Workshop",
+        "tasks": 3.2
+    }, {
+        "source": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ER-Sokolov",
+        "WP": 2,
+        "duration": 3,
+        "purpose": "Videogame dev and advert,  R.M. Seminar/Workshop",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ESR- Requena",
+        "WP": 1,
+        "duration": 2,
+        "purpose": "Identify problem R.M. seminar",
+        "tasks": 1.2
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ESR-Huber",
+        "WP": 1,
+        "duration": 2,
+        "purpose": "Identify problem R.M. seminar",
+        "tasks": 1.2
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR- Fraxanet",
+        "WP": 1,
+        "duration": 2,
+        "purpose": "Identify game criteria R.M. seminar",
+        "tasks": 1.1
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ESR-Abiuso",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Conceptualize and Success indicators R.M. seminar",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ESR-Abiuso",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "",
+        "tasks": 1.4
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-Boghiu",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Analysis gameplay data R.M. seminar",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "value": "ESR-Dawid",
+        "WP": 1,
+        "duration": 2,
+        "purpose": "Conceptualize R.M. seminar",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "value": "ESR-Chung-Yun Hsieh",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Videogame preproduction and prototype R.M. seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ESR-Senno",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Videogame preproduction and prototype R.M. seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "value": "ESR-Gratsea",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Videogame prototype testing R.M. seminar",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ESR-Rivera",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Meas. Impact on playing game strategies R.M. Seminar",
+        "tasks": 3.4
+    }, {
+        "source": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "ESR-Salamon",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Meas. Impact on playing game strategies R.M. Seminar",
+        "tasks": 3.4
+    }, {
+        "source": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "target": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "value": "MNG",
+        "WP": 2,
+        "duration": 1,
+        "purpose": "Game preproduction and prototype R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "target": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "value": "MNG",
+        "WP": 2,
+        "duration": 3,
+        "purpose": "Videogame production, publishing and distribution R.M. Seminar",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "target": {
+            "id": 8,
+            "label": "JILA"
+        },
+        "value": "MNG",
+        "WP": 2,
+        "duration": 1,
+        "purpose": "Videogame production, publishing and distribution R.M. Seminar",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "target": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "value": "TECH",
+        "WP": 2,
+        "duration": 5,
+        "purpose": "Prototype testing \u00a0R.M. Seminar",
+        "tasks": 2.2
+    }, {
+        "source": {
+            "id": 4,
+            "label": "VIS"
+        },
+        "target": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "value": "TECH",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Videogame production, publishing and distribution R.M. Seminar",
+        "tasks": 2.3
+    }, {
+        "source": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "MNG - Skult",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Quantum problem and criteria, workshop",
+        "tasks": 1.1
+    }, {
+        "source": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "MNG - Skult",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "",
+        "tasks": 1.2
+    }, {
+        "source": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "target": {
+            "id": 3,
+            "label": "ICFO"
+        },
+        "value": "MNG - Skult",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "IQHuMinds game jam, R.M. Seminar",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "TECH - Peltola",
+        "WP": 3,
+        "duration": 1,
+        "purpose": "",
+        "tasks": 3.3
+    }, {
+        "source": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "TECH - Peltola",
+        "WP": 2,
+        "duration": 2,
+        "purpose": "Prototype, R.M. Workshop",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "TECH - Tamminen",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Conceptualize R.M. Workshop",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 5,
+            "label": "MiTale"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "TECH - Tamminen",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "R.M. Workshop",
+        "tasks": 1.4
+    }, {
+        "source": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "target": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "value": "ER",
+        "WP": 1,
+        "duration": 2,
+        "purpose": "Identify quantum problem  R.M. Internal hackathon.",
+        "tasks": 1.2
+    }, {
+        "source": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "ESR",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Gameplay analysis R.M. Blog post and seminar.",
+        "tasks": 3.1
+    }, {
+        "source": {
+            "id": 6,
+            "label": "IBM"
+        },
+        "target": {
+            "id": 9,
+            "label": "Unity"
+        },
+        "value": "ESR",
+        "WP": 2,
+        "duration": 6,
+        "purpose": "Quantum videogame preproduction and prototype - Integrate Unity with quantum hardware R.M. Workshop.",
+        "tasks": 2.1
+    }, {
+        "source": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "target": {
+            "id": 2,
+            "label": "UTU"
+        },
+        "value": "ESR",
+        "WP": 1,
+        "duration": 1,
+        "purpose": "Success indicators R.M. Seminar",
+        "tasks": 1.3
+    }, {
+        "source": {
+            "id": 7,
+            "label": "QuSide"
+        },
+        "target": {
+            "id": 1,
+            "label": "UNIPI"
+        },
+        "value": "ESR",
+        "WP": 3,
+        "duration": 2,
+        "purpose": "Hybrid machine/human solution strategies and benchmarking R.M. Seminar",
+        "tasks": 3.2
+    }]
+}
