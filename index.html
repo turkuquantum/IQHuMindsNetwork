@@ -36,7 +36,7 @@ div.tooltip {
     height: auto;
     padding: 5px;
     font: 12px 'Open Sans';
-    background: lightsteelblue;
+    background: #0db7ed;
     border: 0px;
     border-radius: 8px;
     pointer-events: none;
@@ -109,6 +109,9 @@ var data = d3.json('graph.json', function(data) {
           };
           return siblings;
       };
+
+
+
 
       var w = window.innerWidth - 20,
           h = window.innerHeight,
@@ -297,6 +300,8 @@ var data = d3.json('graph.json', function(data) {
         }
 
         update();
+
+
 
         function collide(node) {
           var r = node.radius + 16,
