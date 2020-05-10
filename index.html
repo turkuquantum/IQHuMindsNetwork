@@ -64,10 +64,11 @@ var data = d3.json('graph.json', function(data) {
           }
       };
 
-      this.addLink = function (source, target, value, wp, duration, purpose, tasks) {
+      this.addLink = function (source, target, value, wp, duration, purpose, tasks, name) {
           links.push({"source": findNode(source.id),
                       "target": findNode(target.id),
                       "value": value,
+                      "name": name,
                       "WP": wp,
                       "duration": duration,
                       "purpose": purpose,
@@ -80,7 +81,7 @@ var data = d3.json('graph.json', function(data) {
             console.log(d)
             graph.addNode(d.source);
             graph.addNode(d.target);
-            graph.addLink(d.source, d.target, d.value, d.WP, d.duration, d.purpose, d.tasks);
+            graph.addLink(d.source, d.target, d.value, d.WP, d.duration, d.purpose, d.tasks, d.name);
         });
       };
 
@@ -196,13 +197,13 @@ var data = d3.json('graph.json', function(data) {
                       .attr("xlink:href", function(d) { return "#invis_" + d.source.id + "-" + d.value + "-" + d.target.id; })
                       .style("fill", "#cccccc")
                       .style("font-size", 10)
-                      .text(function(d) { return d.value; })
+                      .text(function(d) { return d.name; })
                       // Tooltip
                       .on("mouseover", function(d) {
                             div.transition()
                                 .duration(200)
                                 .style("opacity", .9);
-                            div.html("<h3>" + d.value + "</h3>" +
+                            div.html("<h3>" + d.name + "</h3>" +
                                      "<b>WP(s)</b>: " + d.WP + "<br/>"  +
                                      "<b>Duration</b>: " + d.duration + " months<br/>" +
                                      "<b>Purpose</b>: " + d.purpose)
