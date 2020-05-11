@@ -55,7 +55,7 @@ div.tooltip h3 {
 <script type="text/javascript">
 
 var data = d3.json('graph2.json', function(data) {
-
+    var noderadius = 10;
     function myGraph() {
       this.addNode = function (n) {
           if (!findNode(n.id)) {
@@ -74,7 +74,7 @@ var data = d3.json('graph2.json', function(data) {
 
       this.initialize = function() {
         data.edges.forEach(function(d) {
-            console.log(d)
+            //console.log(d)
             graph.addNode(d.source);
             graph.addNode(d.target);
             graph.addLink(d.source, d.target, d.value, d.duration);
@@ -135,8 +135,8 @@ var data = d3.json('graph2.json', function(data) {
             .append('svg:marker')
               .attr({'id': d => `arrow-${d}`,
                      'viewBox':'0 -5 10 10',
-                     'refX': 15,
-                     'refY': 0,
+                     'refX': 0.7*noderadius,
+                     //'refY': 0,
                      'orient':'auto',
                      'markerWidth': 3,
                      'markerHeight': 3,
@@ -162,8 +162,7 @@ var data = d3.json('graph2.json', function(data) {
                     })
                     .attr("class", "link")
                     .style("stroke-width", function (d) {
-                        console.log(d);
-                        return d.duration; })
+                        return 1.2 + 0.7*d.duration; })
                     .attr('marker-end', d => `url(${new URL(`#arrow-${d.value}`, location)})`)
                     .style("stroke", function(d){
                         return colors(d.value)
@@ -180,6 +179,8 @@ var data = d3.json('graph2.json', function(data) {
                     .attr("id", function (d) {
                         return "invis_" + d.source.id + "-" + d.value + "-" + d.target.id;
                     })
+                    .style("stroke-width", function (d) {
+                        return 1+ 0.5*d.duration; })
                     .attr("class", "invis");
 
                 pathInvis.exit().remove();
@@ -222,7 +223,7 @@ var data = d3.json('graph2.json', function(data) {
                     .call(force.drag);
 
                 nodeEnter.append("svg:circle")
-                        .attr("r", 10)
+                        .attr("r", noderadius)
                         .attr("id", function (d) {
                             return "Node;" + d.id;
                         })
@@ -246,13 +247,29 @@ var data = d3.json('graph2.json', function(data) {
                         y2 = leftHand ? d.target.y : d.source.y,
                         dx = x2 - x1,
                         dy = y2 - y1,
-                        dr = Math.sqrt(dx * dx + dy * dy),
+                        theta12 = Math.atan2(dy, dx), // Angle between arc and x axis
+
+                        Dx1 = 1.2* noderadius * Math.cos(Math.PI/6 + theta12),
+                        Dy1 = 1.2* noderadius * Math.sin(Math.PI/6 + theta12),
+                        Dx2 = 1.7* noderadius * Math.cos(5*Math.PI/6 + theta12),
+                        Dy2 = 1.7* noderadius * Math.sin(5*Math.PI/6 + theta12);
+
+                    x1 = x1 + Dx1;
+                    x2 = x2 + Dx2;
+                    y1 = y1 + Dy1;
+                    y2 = y2 + Dy2;
+
+                    dx = x2-x1;
+                    dy = y2-y1;
+
+                    var dr = Math.sqrt(dx * dx + dy * dy), // Circle radius
                         drx = dr,
                         dry = dr,
                         sweep = leftHand ? 0 : 1;
                         siblingCount = countSiblingLinks(d.source, d.target)
                         xRotation = 0,
                         largeArc = 0;
+
 
                         if (siblingCount > 1) {
                             var siblings = getSiblingLinks(d.source, d.target);
@@ -264,7 +281,7 @@ var data = d3.json('graph2.json', function(data) {
                             dry = dry/(1 + (1.1/siblingCount) * (arcScale(d.value) - 1));
                         }
 
-                    return "M" + x1 + "," + y1 + "A" + drx + ", " + dry + " " + xRotation + ", " + largeArc + ", " + sweep + " " + x2 + "," + y2;
+                    return "M" + (x1) +"," + (y1) + "A" + drx + ", " + dry + " " + xRotation + ", " + largeArc + ", " + sweep + " " + (x2) + "," + (y2);
                 }
 
                 force.on("tick", function(e) {
