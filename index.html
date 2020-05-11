@@ -7,17 +7,25 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-  background: #384d54;
-  color: white;
+    background: #384d54;
+    color: #5d818d;
+    font-family: 'Open Sans';
 }
+
+body a {
+    color:#5d818d;
+}
+
 text {
     fill: white;
     font-family: 'Open Sans';
 }
+
 circle {
   stroke: white;
   stroke-width: 1.5px;
 }
+
 path.link, path.textpath {
     fill: none;
     stroke: #cccccc;
@@ -42,6 +50,11 @@ div.tooltip {
     pointer-events: none;
 }
 
+#graph {
+    width: 100%;
+    height: 100%;
+}
+
 div.tooltip h3 {
     margin-top: 5px;
     margin-bottom:5px;
@@ -50,12 +63,22 @@ div.tooltip h3 {
 </style>
 </head>
 <body>
+    <div id="explanation">
+        <p>Interactive visualization of the network of secondments for the IQHuMinds project. Link color is related to the work package (WP),</br>
+            while the thickness show how many month/person are spent in the secondments between the connected institutions.</p>
+    </div>
+<div id="graph"></div>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
 
 var data = d3.json('graph2.json', function(data) {
     var noderadius = 10;
+
+    // Keeps track of wether pairs of nodes are connected
+    // by at least one link. Used for mouse-over highlight.
+    const linkedByIndex = {};
+
     function myGraph() {
       this.addNode = function (n) {
           if (!findNode(n.id)) {
@@ -74,12 +97,23 @@ var data = d3.json('graph2.json', function(data) {
 
       this.initialize = function() {
         data.edges.forEach(function(d) {
-            //console.log(d)
+
             graph.addNode(d.source);
             graph.addNode(d.target);
             graph.addLink(d.source, d.target, d.value, d.duration);
         });
+
+        // Construct the linkedByIndex dictionary
+        links.forEach(d => {
+            linkedByIndex[`${d.source.id},${d.target.id}`] = 1;
+        });
       };
+
+
+      function isConnected(a, b) {
+            return linkedByIndex[`${a.id},${b.id}`] || linkedByIndex[`${b.id},${a.id}`] || a.id === b.id;
+        }
+
 
       var findNode = function (nodeId) {
           for (var i in nodes) {
@@ -107,11 +141,8 @@ var data = d3.json('graph2.json', function(data) {
           return siblings;
       };
 
-
-
-
       var w = window.innerWidth - 20,
-          h = window.innerHeight,
+          h = window.innerHeight- 150,
           middle = w/2;
       var linkDistance = 300;
 
@@ -121,8 +152,10 @@ var data = d3.json('graph2.json', function(data) {
             .attr("class", "tooltip")
             .style("opacity", 0);
 
-      var svg = d3.select("body")
-            .append("svg:svg")
+    var chartDiv = document.getElementById("graph");
+    var svg = d3.select(chartDiv).append("svg");
+    console.log("Area size:" + w + ", " + h)
+    svg
               .attr("width", w)
               .attr("height", h)
               .style("z-index", -10)
@@ -151,6 +184,7 @@ var data = d3.json('graph2.json', function(data) {
         var nodes = force.nodes(),
             links = force.links();
 
+
         var update = function () {
 
             var path = svg.selectAll("path.link")
@@ -167,8 +201,6 @@ var data = d3.json('graph2.json', function(data) {
                     .style("stroke", function(d){
                         return colors(d.value)
                     });
-
-
 
                 path.exit().remove();
 
@@ -220,7 +252,30 @@ var data = d3.json('graph2.json', function(data) {
 
             var nodeEnter = node.enter().append("g")
                     .attr("class", "node")
-                    .call(force.drag);
+                    .call(force.drag)
+                    .on("mouseover", function(d) {
+                    var selected = this;
+
+                    d3.selectAll('g.node').transition().style('opacity',function (n) {
+                        if (isConnected(n, d)) {
+                            return 1.0;
+                        } else {
+                            return 0.2;
+                        }
+                    });
+
+                    d3.selectAll('path.link').transition().style('opacity', function (l) {
+                        return (l.source.id == d.id || l.target.id == d.id) ? 1.0 : 0.2;
+                    });
+                    })
+                    .on("mouseout", function(d) {
+                        d3.selectAll('g.node').transition().style('opacity',function () {
+                            return 1.0;
+                        });
+                        d3.selectAll('path.link').transition().style('opacity', function (l) {
+                            return 1.0;
+                        })
+                    });
 
                 nodeEnter.append("svg:circle")
                         .attr("r", noderadius)
@@ -230,6 +285,7 @@ var data = d3.json('graph2.json', function(data) {
                         .attr("class", "nodeStrokeClass")
                         .attr("fill", "#0db7ed")
 
+
                 nodeEnter.append("svg:text")
                         .attr("class", "textClass")
                         .attr("x", 20)
@@ -237,6 +293,7 @@ var data = d3.json('graph2.json', function(data) {
                         .text(function (d) {
                             return d.label;
                         });
+
 
                 node.exit().remove();
 
@@ -277,8 +334,8 @@ var data = d3.json('graph2.json', function(data) {
                             var arcScale = d3.scale.ordinal()
                                                     .domain(siblings)
                                                     .rangePoints([1, siblingCount]);
-                            drx = drx/(1 + (1.1/siblingCount) * (arcScale(d.value) - 1));
-                            dry = dry/(1 + (1.1/siblingCount) * (arcScale(d.value) - 1));
+                            drx = drx/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
+                            dry = dry/(1 + (1/siblingCount) * (arcScale(d.value) - 1));
                         }
 
                     return "M" + (x1) +"," + (y1) + "A" + drx + ", " + dry + " " + xRotation + ", " + largeArc + ", " + sweep + " " + (x2) + "," + (y2);
@@ -316,8 +373,6 @@ var data = d3.json('graph2.json', function(data) {
         }
 
         update();
-
-
 
         function collide(node) {
           var r = node.radius + 16,
@@ -359,3 +414,6 @@ function keepNodesOnTop() {
 }
 });
 </script>
+<p>Designed by Matteo Rossi. Inspired by Matt Kohl's <a href="https://bl.ocks.org/mattkohl/146d301c0fc20d89d85880df537de7b0">Force-Directed Graph with Multiple Labelled Edges between Nodes</a></p>
+</body>
+</html>
